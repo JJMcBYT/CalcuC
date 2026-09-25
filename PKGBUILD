@@ -1,5 +1,5 @@
 pkgname="CalcuC"
-pkgver="1.0.0"
+pkgver="1.1.0"
 pkgrel="1"
 pkgdesc="A small, lightweight, dual-term calculator; written in C"
 arch=("x86_64")

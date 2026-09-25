@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pkgname=calcuc_1.0_all
+pkgname=calcuc_1.1_all
 
 
 if ! [ "$EUID" -ne 0 ]
@@ -39,9 +39,9 @@ cp ./debianfiles/control ./$pkgname/DEBIAN/control
 echo "Done"
 
 echo "Building and Installing Debian Package..."
-dpkg-deb --build --root-owner-group calcuc_1.0_all
+dpkg-deb --build --root-owner-group "$pkgname"
 
-sudo dpkg -i calcuc_1.0_all.deb
+sudo dpkg -i "$pkgname".deb
 
 echo "Done"
 
