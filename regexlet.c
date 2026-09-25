@@ -23,7 +23,7 @@ int strpassing(char x[50]) {
 	allowedStr = regexec(&noLetters, x, 0, NULL, 0);
 
 	if (allowedStr == 0) {
-		printf("Err: String cannot contain any letters nor whitespaces.\n");
+		printf("Err: String cannot contain any letters, whitespaces nor other nonmathmatic symbols.\n");
 	}
 
 	else {
