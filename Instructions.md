@@ -20,7 +20,7 @@
 - To install this program with the source code, you must:
 1. Unzip the source code
 2. "cd" into the source code's directory
-3. run the bash file for Debian with "./install-archlinux.sh"
+3. run the bash file for Arch with "./install-archlinux.sh"
 - Note: it does not matter if you run the file with root or not on Arch.
 
 ## Final Note: Source code compilation does not work on Windows.
