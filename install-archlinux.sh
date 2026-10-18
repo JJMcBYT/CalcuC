@@ -8,8 +8,8 @@ then
       exit 1
 fi
 
-gcc -o CalcuC CalcuC.c regexnum.c regexlet.c shuntingyard.c
+gcc -o CalcuC CalcuC.c regexlet.c euler.c machin.c shuntingyard.c regexnum.c -lm
 
 makepkg
 
-sudo pacman -U CalcuC-1.1.0-1-x86_64.pkg.tar.zst
+sudo pacman -U CalcuC-1.3.0-1-x86_64.pkg.tar.zst

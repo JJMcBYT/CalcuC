@@ -4,6 +4,7 @@
 #include "./Headers/regexlet.h"
 #include "./Headers/regexnum.h"
 #include "./Headers/shuntingyard.h"
+#include "./Headers/euler.h"
 
 
 int main() {
@@ -16,6 +17,7 @@ int main() {
 	do {
 		printf("Would you like to input an equation? Y/n: ");
 		scanf(" %c", &choice);
+		printf("You can input \"e?\" or \"pi?\" to compute e and pi\n");
 
 		if(choice == 'N' || choice == 'n') {
 			exit(0);

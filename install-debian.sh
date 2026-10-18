@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pkgname=calcuc_1.1_all
+pkgname=calcuc_1.3_all
 
 
 if ! [ "$EUID" -ne 0 ]
@@ -30,7 +30,7 @@ then
       exit 1
 fi
 
-gcc -o CalcuC CalcuC.c regexlet.c regexnum.c shuntingyard.c
+gcc -o CalcuC CalcuC.c regexlet.c euler.c machin.c shuntingyard.c regexnum.c -lm
 cp CalcuC ./$pkgname/usr/bin
 echo "Done"
 
